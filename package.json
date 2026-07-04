@@ -1,0 +1,16 @@
+{
+  "name": "express-book-review",
+  "version": "1.0.0",
+  "description": "Book review API for Coursera-style assignment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "generate-outputs": "node scripts/generate_outputs.js"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  }
+}

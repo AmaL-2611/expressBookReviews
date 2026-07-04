@@ -1,0 +1,7 @@
+# Command
+curl -s -X DELETE http://localhost:3000/auth/review/1 -H 'Authorization: Bearer 79bb4108-e20a-42ec-971b-2d3a8a03881a'
+
+# Output
+{
+  "message": "Review deleted"
+}

@@ -1,0 +1,13 @@
+# Command
+curl -s http://localhost:3000/books/isbn/1
+
+# Output
+{
+  "isbn": "1",
+  "title": "Eloquent JavaScript",
+  "author": "Marijn Haverbeke",
+  "reviews": {
+    "alice": "Great intro to JS",
+    "bob": "A bit dense but thorough"
+  }
+}
