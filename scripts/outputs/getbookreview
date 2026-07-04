@@ -1,8 +1,5 @@
 # Command
-curl -s http://localhost:3000/books/1/review
+curl -s http://localhost:3000/review/1
 
 # Output
-{
-  "alice": "Great intro to JS",
-  "bob": "A bit dense but thorough"
-}
+{}

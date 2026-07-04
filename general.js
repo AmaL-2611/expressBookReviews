@@ -3,25 +3,25 @@ const axios = require('axios');
 const BASE = 'http://localhost:3000';
 
 async function getAllBooks() {
-  const res = await axios.get(`${BASE}/books`);
+  const res = await axios.get(`${BASE}/`);
   console.log('All books:');
   console.log(JSON.stringify(res.data, null, 2));
 }
 
 async function getBooksByISBN(isbn) {
-  const res = await axios.get(`${BASE}/books/isbn/${encodeURIComponent(isbn)}`);
+  const res = await axios.get(`${BASE}/isbn/${encodeURIComponent(isbn)}`);
   console.log(`Book with ISBN ${isbn}:`);
   console.log(JSON.stringify(res.data, null, 2));
 }
 
 async function getBooksByAuthor(author) {
-  const res = await axios.get(`${BASE}/books/author/${encodeURIComponent(author)}`);
+  const res = await axios.get(`${BASE}/author/${encodeURIComponent(author)}`);
   console.log(`Books by author matching "${author}":`);
   console.log(JSON.stringify(res.data, null, 2));
 }
 
 async function getBooksByTitle(title) {
-  const res = await axios.get(`${BASE}/books/title/${encodeURIComponent(title)}`);
+  const res = await axios.get(`${BASE}/title/${encodeURIComponent(title)}`);
   console.log(`Books with title matching "${title}":`);
   console.log(JSON.stringify(res.data, null, 2));
 }

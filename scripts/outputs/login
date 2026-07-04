@@ -4,5 +4,5 @@ curl -s -X POST http://localhost:3000/login -H 'Content-Type: application/json' 
 # Output
 {
   "message": "Login successful",
-  "token": "79bb4108-e20a-42ec-971b-2d3a8a03881a"
+  "token": "02bc55cd-efc7-4b86-94c2-3bea22988c76"
 }

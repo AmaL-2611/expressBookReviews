@@ -1,12 +1,10 @@
 # Command
-curl -s -X PUT http://localhost:3000/auth/review/1 -H 'Authorization: Bearer 79bb4108-e20a-42ec-971b-2d3a8a03881a' -H 'Content-Type: application/json' -d '{"review":"This is my automated review"}'
+curl -s -X PUT http://localhost:3000/auth/review/1 -H 'Authorization: Bearer 02bc55cd-efc7-4b86-94c2-3bea22988c76' -H 'Content-Type: application/json' -d '{"review":"This is my automated review"}'
 
 # Output
 {
   "message": "Review added/modified",
   "reviews": {
-    "alice": "Great intro to JS",
-    "bob": "A bit dense but thorough",
     "student1": "This is my automated review"
   }
 }

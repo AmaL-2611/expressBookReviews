@@ -19,30 +19,30 @@ function saveBooks() {
 }
 
 // Public endpoints
-app.get('/books', (req, res) => {
+app.get('/', (req, res) => {
   res.json(books);
 });
 
-app.get('/books/isbn/:isbn', (req, res) => {
+app.get('/isbn/:isbn', (req, res) => {
   const { isbn } = req.params;
   const book = books[isbn];
   if (!book) return res.status(404).json({ message: 'Book not found' });
   res.json(book);
 });
 
-app.get('/books/author/:author', (req, res) => {
+app.get('/author/:author', (req, res) => {
   const author = req.params.author.toLowerCase();
   const found = Object.values(books).filter(b => b.author.toLowerCase().includes(author));
   res.json(found);
 });
 
-app.get('/books/title/:title', (req, res) => {
+app.get('/title/:title', (req, res) => {
   const title = req.params.title.toLowerCase();
   const found = Object.values(books).filter(b => b.title.toLowerCase().includes(title));
   res.json(found);
 });
 
-app.get('/books/:isbn/review', (req, res) => {
+app.get('/review/:isbn', (req, res) => {
   const { isbn } = req.params;
   const book = books[isbn];
   if (!book) return res.status(404).json({ message: 'Book not found' });

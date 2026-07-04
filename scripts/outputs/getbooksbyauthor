@@ -1,5 +1,5 @@
 # Command
-curl -s http://localhost:3000/books/author/Marijn%20Haverbeke
+curl -s http://localhost:3000/author/Marijn%20Haverbeke
 
 # Output
 [
@@ -7,9 +7,6 @@ curl -s http://localhost:3000/books/author/Marijn%20Haverbeke
     "isbn": "1",
     "title": "Eloquent JavaScript",
     "author": "Marijn Haverbeke",
-    "reviews": {
-      "alice": "Great intro to JS",
-      "bob": "A bit dense but thorough"
-    }
+    "reviews": {}
   }
 ]
